@@ -31,12 +31,6 @@ All Reddit interactions happen through OpenClaw's `browser` tool — real Chrome
 
 ## Installation
 
-### Via ClawHub (recommended)
-```bash
-clawhub install reddit-brand-agent
-```
-
-### Manual
 Clone into your OpenClaw skills directory:
 ```bash
 git clone https://github.com/rogermzy/reddit-brand-agent.git ~/clawd/skills/reddit-brand-agent
