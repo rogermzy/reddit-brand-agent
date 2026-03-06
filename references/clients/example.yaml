@@ -1,0 +1,52 @@
+# Example client config — copy and customize for your brand
+# Usage: cp example.yaml your-brand.yaml
+
+client: example-brand
+product_url: https://example.com
+product_description: >
+  Brief description of what your product does and who it's for.
+
+reddit_username: # configure after browser login
+
+target_subreddits:
+  # Tier 1: Direct match (people looking for your solution)
+  - ExampleSubreddit1
+  - ExampleSubreddit2
+  
+  # Tier 2: Target audience hangouts
+  - ExampleSubreddit3
+  - ExampleSubreddit4
+  
+  # Tier 3: Broader industry
+  - ExampleSubreddit5
+
+keywords:
+  # High intent
+  - "your product category"
+  - "problem your product solves"
+  # Competitor mentions
+  - "competitor name"
+
+competitors:
+  - Competitor1
+  - Competitor2
+
+brand_voice: |
+  PERSONA: Who is speaking? (e.g., power user, industry insider, casual fan)
+  
+  TONE: How do they sound? (e.g., casual, technical, friendly)
+  
+  DO:
+  - Answer questions with genuine value first
+  - Share personal experience naturally
+  - Be fair about competitors
+  
+  DON'T:
+  - Sound like marketing copy
+  - Mention brand in every reply
+  - Trash competitors
+
+daily_limit: 5
+require_approval: true
+min_gap_minutes: 30
+max_per_subreddit_per_day: 2
