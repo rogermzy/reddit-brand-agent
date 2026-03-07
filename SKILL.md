@@ -95,20 +95,23 @@ Skip posts where:
 
 ### 4. Generate Reply
 
-**Reply principles (critical for survival):**
-- Lead with genuine value — answer the question first
-- Brand mention is OPTIONAL — only if naturally relevant
-- Never use marketing language ("best tool", "check out", "you should try")
-- Match subreddit tone (casual in r/ChatGPT, academic in r/MachineLearning)
-- Keep replies 2-5 sentences unless detailed answer warranted
-- Include personal experience framing ("I've been using...", "What worked for me...")
+For detailed comment writing tactics, see `references/reddit-playbook.md`.
 
-**Reply format:**
-```
-[Genuine helpful answer to the post's question]
-[Optional: personal experience that naturally involves the brand]
-[Optional: follow-up question or additional tip]
-```
+**5-Part Comment Formula:**
+1. **Empathy Hook** — Mirror OP's pain ("I had the same issue...")
+2. **Mini Story** — Believable personal anecdote
+3. **Subtle Recommendation** — Soft brand mention, NO links
+4. **Social Proof/Comparison** — Fair competitor comparison
+5. **Exit Line** — Casual close ("not sponsored or anything lol")
+
+**Style rules (critical for survival):**
+- Lowercase for realism, add line breaks
+- Drop a small typo once per paragraph (imperfection = trust)
+- Never bold/italicize — looks like marketing
+- 1-2 sentences for fast threads, 3-5 for product discussions, 6-10 for high-value ranking threads
+- Match subreddit tone (casual in r/ChatGPT, academic in r/MachineLearning)
+
+**Brand mention is OPTIONAL** — most replies should be pure value with zero brand mention.
 
 ### 5. Post Reply via Browser
 
@@ -125,6 +128,38 @@ After each action, append to the activity log:
 ```
 scripts/reddit-log.sh <client> <action> <subreddit> <post_url> "<reply_summary>"
 ```
+
+## Google Thread Hijacking (SEO Play)
+
+The highest-ROI Reddit tactic: find threads already ranking on Google and comment in them.
+
+1. Search Google: `best [product category] site:reddit.com`
+2. Identify threads ranking top 5 with ≥20 comments
+3. Drop a natural comment using the 5-part formula
+4. That comment now gets organic Google traffic for 12-36 months
+5. Google AI Overviews also pull Reddit mentions into snippets
+
+**Prioritize threads by keyword tier:**
+- Tier 1 (High buyer intent): "best X", "top X" → comment early, prioritize
+- Tier 2 (Medium): Brand comparisons, reviews → participate lightly
+- Tier 3 (Awareness): Opinions, experiences → brand mention only, no links
+
+## Account Warm-Up SOP
+
+New accounts MUST be warmed before any brand activity:
+- **Week 1:** Lurk only. Join subreddits, upvote. No comments.
+- **Week 2:** 3-5 casual comments/day. Mix tones. No links/brand.
+- **Week 3:** Post one harmless thread. Build karma.
+- **Week 4:** Start soft mentions ("tried [Brand], not bad")
+- **Week 5+:** Fully active
+
+## Shadowban Detection
+
+After each comment, verify it's visible:
+```
+browser → log out or incognito → navigate to comment URL → check if visible
+```
+If 404 or missing → account is shadowbanned. Stop using it immediately.
 
 ## Rate Limits & Safety
 
